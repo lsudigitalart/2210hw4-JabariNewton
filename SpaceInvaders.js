@@ -16,6 +16,7 @@ var enemyC = 65;
 var projTemp;
 function setup() {
   createCanvas(600,600);
+  
   noCursor();
   smooth();
   //stroke(0,255,0);
@@ -35,7 +36,7 @@ function draw() {
 
   enemyX = enemyX + 1;
   if(enemyX > 400){
-    enemyX = 200;sd
+    enemyX = 200;
   }
 if(mdist < 280)
 {
