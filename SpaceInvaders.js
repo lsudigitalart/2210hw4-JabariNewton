@@ -16,7 +16,7 @@ var enemyC = 65;
 var projTemp;
 function setup() {
   createCanvas(600,600);
-  
+
   noCursor();
   smooth();
   //stroke(0,255,0);
@@ -34,14 +34,16 @@ function draw() {
   println(mdist);
   ellipse(enemyX, enemyY,enemyC,enemyC);
 
-  enemyX = enemyX + 1;
+  // enemyX = enemyX + 1;
   if(enemyX > 400){
     enemyX = 200;
   }
-if(mdist < 280)
+if(dist(projectileX  + enemyX < 100))
 {
   testB = 1;
-  enemyC = enemyC + 10;
+  textSize(50);
+  text("hit!", 50, 50);
+  fill(255,0,0);
   testB = 0;
 }
   //Controls
